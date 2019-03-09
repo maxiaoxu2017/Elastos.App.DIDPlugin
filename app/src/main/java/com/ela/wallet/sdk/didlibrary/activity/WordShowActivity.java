@@ -23,13 +23,13 @@ public class WordShowActivity extends BaseActivity{
 
     @Override
     protected void initView() {
-        tv_word_show = findViewById(R.id.tv_word_show);
+        tv_word_show = (TextView) findViewById(R.id.tv_word_show);
     }
 
     @Override
     protected void initData() {
         String words = Utilty.getPreference(Constants.SP_KEY_DID_MNEMONIC, "");
-        LogUtil.w(words);
+//        LogUtil.w(words);
 //        罚 津 召 抬 裁 蛋 摇 侵 式 桃 铺 豪
         tv_word_show.setText(words);
     }
